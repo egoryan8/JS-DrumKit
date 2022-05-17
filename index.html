@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DrimKit</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="root">
+  <div class="page">
+    <div class="keys">
+      <div class="key" data-key="65">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div class="key" data-key="83">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div class="key" data-key="68">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div class="key" data-key="70">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div class="key" data-key="71">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div class="key" data-key="72">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div class="key" data-key="74">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div class="key" data-key="75">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div class="key" data-key="76">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+    <audio src="./sounds/clap.wav" data-key="65"></audio>
+    <audio src="./sounds/hihat.wav" data-key="83"></audio>
+    <audio src="./sounds/kick.wav" data-key="68"></audio>
+    <audio src="./sounds/openhat.wav" data-key="70"></audio>
+    <audio src="./sounds/boom.wav" data-key="71"></audio>
+    <audio src="./sounds/ride.wav" data-key="72"></audio>
+    <audio src="./sounds/snare.wav" data-key="74"></audio>
+    <audio src="./sounds/tom.wav" data-key="75"></audio>
+    <audio src="./sounds/tink.wav" data-key="76"></audio>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

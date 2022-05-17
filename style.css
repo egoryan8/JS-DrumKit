@@ -1,0 +1,77 @@
+@import url(./fonts/inter.css);
+
+.root {
+  background-image: url(./drumkit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.root::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1400px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  z-index: 10;
+}
+
+.keys {
+  padding: 40px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1%;
+  position: relative;
+  z-index: 10;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  background: transparent;
+  background-color: rgba(37, 35, 35, 0.4);
+  border: 4px solid black;
+  border-radius: 10px;
+  font-size: 32px;
+  padding: 20px 0;
+  color: white;
+  font-weight: 900;
+  transition: .1s;
+}
+
+.key_active {
+  transform: scale(1.2);
+  background: rgb(163, 236, 26);
+}
+
+.sound {
+  color: yellow;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .keys {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+  }
+}
